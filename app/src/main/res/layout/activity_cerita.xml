@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".CeritaActivity">
+
+    <!-- Tombol Tambah Cerita -->
+    <Button
+        android:id="@+id/btn_tambah_cerita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Tambah Cerita Baru"
+        android:textStyle="bold"
+        android:backgroundTint="#6200EE"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="📖 Daftar Cerita"
+        android:textColor="#6200EE"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCerita"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- Tombol Kembali ke Home -->
+    <Button
+        android:id="@+id/btn_kembali_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏠 Kembali ke Home"
+        android:textStyle="bold"
+        android:backgroundTint="#03DAC5"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
